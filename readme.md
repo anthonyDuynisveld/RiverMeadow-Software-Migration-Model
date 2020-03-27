@@ -1,6 +1,6 @@
 Hello and welcome to my River Meadow Migration Tool
 
-	I have been working on the project since about 9:00 this morning. I currently have my programming PC out of commission due to mismatched part purchase timing. So for this assignment I have needed to set up my entire Java development environment on my sister in-laws PC. As such the project has taken quite a bit longer than anticipated.
+   I have been working on the project since about 9:00 this morning. I currently have my programming PC out of commission due to mismatched part purchase timing. So for this assignment I have needed to set up my entire Java development environment on my sister in-laws PC. As such the project has taken quite a bit longer than anticipated.
    
    The final result is non the less to adequate satisfaction. It has an embeded tomcat server, mangoDB serve, and basic credential validation. Enter the following urls in your web browser to execute the desired actions
    
