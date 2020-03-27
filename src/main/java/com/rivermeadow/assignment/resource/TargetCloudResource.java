@@ -15,41 +15,6 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/targetClouds")
-public class TargetCloudResource {
-	  @Autowired
-	  private TargetCloudRepository repository;
-	  
-	  @RequestMapping(value = "/", method = RequestMethod.GET)
-	  public List<TargetCloud> getAllTargetCloud() {
-	    return repository.findAll();
-	  }
+public class TargetCloudResource extends GenericResource<TargetCloudRepository, TargetCloud> {
 
-	  @RequestMapping(value = "/{id}", method = RequestMethod.GET)
-	  public TargetCloud getTargetCloudById(@PathVariable("id") Long id) {
-	    return repository.findById(id).get();
-	  }
-	  
-	  @RequestMapping(value = "/{id}", method = RequestMethod.PUT)
-	  public void modifyTargetCloudById(@PathVariable("id") Long id, @Valid @RequestBody TargetCloud targetClouds) {
-	    targetClouds.setId(id);
-	    repository.save(targetClouds);
-	  }
-	  
-	  @RequestMapping(value = "/", method = RequestMethod.POST)
-	  public TargetCloud createTargetCloud(@Valid @RequestBody TargetCloud targetClouds) {
-	    targetClouds.setId(targetClouds.getId());
-	    repository.save(targetClouds);
-	    return targetClouds;
-	  }
-	  
-	  @RequestMapping(value = "/{id}", method = RequestMethod.DELETE)
-	  public void deleteTargetCloud(@PathVariable Long id) {
-	    repository.deleteById(id);
-	  }
-	  
-	  @RequestMapping(value = "/", method = RequestMethod.DELETE)
-	  public void deleteAll() {
-	    repository.deleteAll();
-	  }
-
-	}
+}

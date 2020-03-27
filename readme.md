@@ -29,3 +29,7 @@ Hello and welcome to my River Meadow Migration Tool
 	  create new record		/ 		method = POST 	RequestBody {related POJO} 
 	  delete record			/{id} 	method = DELETE
    
+   
+   I was unhappy with the current build and wanted to improve on the project because generics, pretty code and my dev enviroment is set up.
+   
+   

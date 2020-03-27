@@ -3,6 +3,8 @@ package com.rivermeadow.assignment.model;
 
 import org.springframework.data.annotation.Id;
 
+import com.rivermeadow.assignment.model.generics.IdedTable;
+
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -17,7 +19,7 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class Volume {
+public class Volume implements IdedTable {
 	
 	@Id
 	private Long id;

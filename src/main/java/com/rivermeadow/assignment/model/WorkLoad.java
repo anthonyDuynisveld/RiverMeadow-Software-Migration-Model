@@ -8,6 +8,7 @@ import javax.validation.constraints.NotNull;
 import org.springframework.data.annotation.Id;
 
 import com.rivermeadow.assignment.model.data.WebAuthenticationCredentials;
+import com.rivermeadow.assignment.model.generics.IdedTable;
 import com.rivermeadow.assignment.ultilities.UniqueIP;
 
 import lombok.AllArgsConstructor;
@@ -30,7 +31,7 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class WorkLoad {
+public class WorkLoad implements IdedTable {
 	
 	@Id
 	private Long id;
